@@ -1,0 +1,32 @@
+- generic [ref=e3]:
+  - heading "Zod Resolver 切り替え検証" [level=1] [ref=e4]
+  - paragraph [ref=e5]: 同じ入力値に対してresolverを切り替え、エラー状態が正しく反映されるか確認
+  - generic [ref=e6]:
+    - generic [ref=e7]: "react-hook-form: 7.66.0"
+    - generic [ref=e8]: "@hookform/resolvers: 3.10.0"
+    - generic [ref=e9]: "zod: 3.22.4"
+    - generic [ref=e10]: "react: 18.3.1"
+  - paragraph [ref=e11]: "手順: 「送信して検証」→ ゆるいResolverで通過を確認 → 「厳しいResolver」に切り替え → エラーが出ることを確認"
+  - generic [ref=e12]:
+    - generic [ref=e13]:
+      - button "ゆるいResolver" [active] [ref=e14] [cursor=pointer]
+      - button "厳しいResolver" [ref=e15] [cursor=pointer]
+    - generic [ref=e16]:
+      - paragraph [ref=e17]:
+        - strong [ref=e18]: "現在: ゆるいスキーマ"
+      - list [ref=e19]:
+        - listitem [ref=e20]: "name: 1文字以上でOK"
+        - listitem [ref=e21]: "email: 1文字以上でOK"
+        - listitem [ref=e22]: "code: 1文字以上でOK"
+    - generic [ref=e23]:
+      - generic [ref=e24]:
+        - generic [ref=e25]: 名前
+        - textbox [ref=e26]: test
+      - generic [ref=e27]:
+        - generic [ref=e28]: メール
+        - textbox [ref=e29]: test
+      - generic [ref=e30]:
+        - generic [ref=e31]: コード
+        - textbox [ref=e32]: test
+      - button "送信して検証" [ref=e33] [cursor=pointer]
+    - generic [ref=e34]: バリデーション通過
